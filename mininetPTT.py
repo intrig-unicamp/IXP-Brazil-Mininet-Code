@@ -10,7 +10,7 @@ import networkx as nx
 import os
 
 from mininet.net import Mininet
-from mininet.node import RemoteController, OVSKernelSwitch, UserSwitch
+from mininet.node import Controller, OVSKernelSwitch, UserSwitch
 from mininet.cli import CLI
 from mininet.log import setLogLevel
 from mininet.link import Link, TCLink
@@ -22,7 +22,7 @@ def topology():
     filename='Ptt_Path_SJC.txt'
 
     "Create a network."
-    net = Mininet( controller=RemoteController, link=TCLink, switch=OVSKernelSwitch )
+    net = Mininet( controller=Controller, link=TCLink, switch=OVSKernelSwitch )
 
     i=0;k=1;j=0
     node = [[0 for x in xrange(50)] for x in xrange(333300)]

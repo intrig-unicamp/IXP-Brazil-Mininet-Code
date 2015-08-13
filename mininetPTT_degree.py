@@ -10,7 +10,7 @@ import networkx as nx
 import os
 
 from mininet.net import Mininet
-from mininet.node import RemoteController, OVSKernelSwitch, UserSwitch
+from mininet.node import Controller, OVSKernelSwitch, UserSwitch
 from mininet.cli import CLI
 from mininet.log import setLogLevel
 from mininet.link import Link, TCLink
@@ -23,7 +23,7 @@ def topology():
     Degree = 12
 
     "Create a network."
-    net = Mininet( controller=RemoteController, link=TCLink, switch=OVSKernelSwitch )
+    net = Mininet( controller=Controller, link=TCLink, switch=OVSKernelSwitch )
 
     i=0;k=1;j=0
     node = [[0 for x in xrange(50)] for x in xrange(333300)]
@@ -55,7 +55,7 @@ def topology():
         x+=1
 
     #h2 = net.addHost( 'h2', mac='00:00:00:00:00:02', ip='10.0.0.2/8' )
-    c3 = net.addController( 'c3', controller=RemoteController, ip='127.0.0.1', port=6633 )
+    c3 = net.addController( 'c3', ip='127.0.0.1', port=6633 )
 
     print "*** Creating links"
     i=0;k=1;j=0

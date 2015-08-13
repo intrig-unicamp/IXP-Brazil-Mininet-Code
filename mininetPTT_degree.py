@@ -19,7 +19,8 @@ from mininet.link import Link, TCLink
 def topology():
     
     #PTT name
-    filename='Ptt_Path_SJC.txt'
+    filename='Ptt_Path_BA.txt'
+    Degree = 12
 
     "Create a network."
     net = Mininet( controller=RemoteController, link=TCLink, switch=OVSKernelSwitch )
@@ -43,6 +44,8 @@ def topology():
         k=1
         j+=1
 
+    remove = [n for n, degree in A.degree().items() if degree < Degree] 
+    A.remove_nodes_from(remove)
     print "*** Creating %s nodes"%len(A.nodes())
     asn=[0 for x in xrange(len(A.nodes()))]
     x=0
@@ -64,7 +67,7 @@ def topology():
         while i <= count:
             if (i==0):
                 node[j][i]=26121
-            elif((i>0) and (node[j][k-1]!=int(line.strip().split(' ')[i-1]))):
+            elif((i>0) and (node[j][k-1]!=int(line.strip().split(' ')[i-1])) and node[k][k-1] in A.nodes() and int(line.strip().split(' ')[i-1]) in A.nodes()):
                 node[j][k] = int(line.strip().split(' ')[i-1])
                 print net.addLink("ASN%s"%node[j][k-1],"ASN%s"%node[j][k])
                 k+=1

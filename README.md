@@ -13,31 +13,31 @@ To run the code just type `python mininetPTT.py`, but you have to choose the PTT
 ####[Important]  
 Depending of the code the process can take too long time (more than 1 hour) and require more than 32Gb of RAM memory.  
 
-####[File Details]  
-126 Ptt_Path_SJC.txt  
-27524 Ptt_Path_LDA.txt  
-66240 Ptt_Path_SP.txt  
-66312 Ptt_Path_PR.txt  
-2338203 Ptt_Path_LAJ.txt  
-2381375 Ptt_Path_MGF.txt   
-2393014 Ptt_Path_SJP.txt   
-2406054 Ptt_Path_DF.txt  
-2449641 Ptt_Path_GYN.txt  
-2463723 Ptt_Path_SCA.txt  
-2596396 Ptt_Path_CXJ.txt  
-3162836 Ptt_Path_MAO.txt  
-4602615 Ptt_Path_BEL.txt   
-4807284 Ptt_Path_PE.txt  
-4888369 Ptt_Path_MG.txt    
-4917649 Ptt_Path_RJ.txt   
-5056202 Ptt_Path_SC.txt    
-5309457 Ptt_Path_BA.txt    
-5496507 Ptt_Path_CPV.txt   
-5706345 Ptt_Path_AME.txt   
-7098927 Ptt_Path_CE.txt   
-7588089 Ptt_Path_NAT.txt    
-7731698 Ptt_Path_CAS.txt   
-8608186 Ptt_Path_CGB.txt   
-10873057 Ptt_Path_VIX.txt   
-59148359 Ptt_Path_RS.txt  
+####[File Size Details]  
+[1] 126 bytes - Ptt_Path_SJC.txt  
+[2] 27524 bytes - Ptt_Path_LDA.txt  
+[3] 66240 bytes - Ptt_Path_SP.txt  
+[4] 66312 bytes - Ptt_Path_PR.txt  
+[5] 2338203 bytes - Ptt_Path_LAJ.txt  
+[6] 2381375 bytes - Ptt_Path_MGF.txt   
+[7] 2393014 bytes - Ptt_Path_SJP.txt   
+[8] 2406054 bytes - Ptt_Path_DF.txt  
+[9] 2449641 bytes - Ptt_Path_GYN.txt  
+[10] 2463723 bytes - Ptt_Path_SCA.txt  
+[11] 2596396 bytes - Ptt_Path_CXJ.txt  
+[12] 3162836 bytes - Ptt_Path_MAO.txt  
+[13] 4602615 bytes - Ptt_Path_BEL.txt   
+[14] 4807284 bytes - Ptt_Path_PE.txt  
+[15] 4888369 bytes - Ptt_Path_MG.txt    
+[16] 4917649 bytes - Ptt_Path_RJ.txt   
+[17] 5056202 bytes - Ptt_Path_SC.txt    
+[18] 5309457 bytes - Ptt_Path_BA.txt    
+[19] 5496507 bytes - Ptt_Path_CPV.txt   
+[20] 5706345 bytes - Ptt_Path_AME.txt   
+[21] 7098927 bytes - Ptt_Path_CE.txt   
+[22] 7588089 bytes - Ptt_Path_NAT.txt    
+[23] 7731698 bytes - Ptt_Path_CAS.txt   
+[24] 8608186 bytes - Ptt_Path_CGB.txt   
+[25] 10873057 bytes - Ptt_Path_VIX.txt   
+[26] 59148359 bytes - Ptt_Path_RS.txt  
 

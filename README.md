@@ -2,8 +2,8 @@
 
 You have to set up some important system variables. To do that please run the following commands:  
 
-`ulimit -n 65000`    
-`echo "kernel.pty.max = 50000" >> /etc/sysctl.conf`    
+`ulimit -n 65000` (estimated value)    
+`echo "kernel.pty.max = 50000" >> /etc/sysctl.conf` (estimated value)    
 `sysctl -p`  
 
 ###Running the code:  

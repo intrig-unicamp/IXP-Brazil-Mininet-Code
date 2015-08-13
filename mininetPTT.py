@@ -52,7 +52,7 @@ def topology():
         x+=1
 
     #h2 = net.addHost( 'h2', mac='00:00:00:00:00:02', ip='10.0.0.2/8' )
-    c3 = net.addController( 'c3', controller=RemoteController, ip='127.0.0.1', port=6633 )
+    c3 = net.addController( 'c3', ip='127.0.0.1', port=6633 )
 
     print "*** Creating links"
     i=0;k=1;j=0

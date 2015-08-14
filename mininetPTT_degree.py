@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-Mininet Code to run PTT (Pontos de troga de trafego no Mininet) or IXP (Internet Exchange Points)
+Mininet Code to run PTT (Pontos de troca de trafego do Brasil) or Brazilian IXP (Internet Exchange Points)
 author: Ramon Fontes - ramonrf@dca.fee.unicamp.br
                        ramonreisfontes@gmail.com
 """
@@ -20,7 +20,7 @@ def topology():
     
     #PTT name
     filename='Ptt_Path_BA.txt'
-    Degree = 12
+    Degree = 3
 
     "Create a network."
     net = Mininet( controller=Controller, link=TCLink, switch=OVSKernelSwitch )

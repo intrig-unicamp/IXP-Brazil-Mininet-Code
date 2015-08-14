@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-Mininet Code to run PTT (Pontos de troga de trafego no Mininet) or IXP (Internet Exchange Points)
+Mininet Code to run PTT (Pontos de troca de trafego do Brasil) or Brazilian IXP (Internet Exchange Points)
 author: Ramon Fontes - ramonrf@dca.fee.unicamp.br
                        ramonreisfontes@gmail.com
 """

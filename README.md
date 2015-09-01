@@ -1,6 +1,6 @@
 ###Instructions:  
 
-You have to set up some important system variables. To do that please run the following commands:  
+You have to set some important system variables. To do that please run the following commands on terminal:  
 
 `ulimit -n 65000` (estimated value)    
 `echo "kernel.pty.max = 50000" >> /etc/sysctl.conf` (estimated value)    

@@ -62,7 +62,7 @@ def topology():
             k=1
             j+=1
             
-    Degree = int(raw_input('Please enter the number of degree which you want to remove: '))
+    Degree = int(raw_input('Please enter the number of degree that you want to remove: '))
     
     for x in A.nodes():
         if len(nx.shortest_path(A,source=26121,target=x)) > Degree:

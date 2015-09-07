@@ -13,6 +13,9 @@ To run the code just type `python mininetPTT.py`, but you have to choose the PTT
 ####[Important]  
 Depending of the code the process can take too long time (more than 1 or 2 hours) and require more than 160Gb of RAM memory. Alternatively you can use `mininetPTT_degree.py` file and choose the number of ASes hops from the PTT that you want to remove. That file should create another one called `mininetCode.py` and you do not need to run `mininetPTT_degree.py` anymore.
 
+###Dependency:   
+Networkx - https://networkx.github.io/   
+
 ####[File Size Details]  
 [1] 126 bytes - Ptt_Path_SJC.txt  
 [2] 27524 bytes - Ptt_Path_LDA.txt  

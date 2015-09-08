@@ -116,11 +116,8 @@ def topology():
     os.system('echo "    net.build()" >> %s' % (outputFileName)) 
     os.system('echo "    c1.start()\n" >> %s' % (outputFileName)) 
     
-    x=0
-    for nodes in A.nodes():
-        if str(nodes) not in str(h):
-            os.system('echo "    %s.start( [c1] )" >> %s' % (asn[x], outputFileName)) 
-            x+=1
+    for ases in asn:
+        os.system('echo "    %s.start( [c1] )" >> %s' % (ases, outputFileName))
 
     os.system('echo "\n    print \'*** Running CLI ***\'" >> %s' % (outputFileName)) 
     os.system('echo "    CLI( net )" >> %s' % (outputFileName)) 

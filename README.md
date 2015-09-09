@@ -20,12 +20,12 @@ Networkx - https://networkx.github.io/
 The links among ASes are configured as follows:  
 .. code-block:: bash
 
-$if hops < 3:  
-$    bw=1000  
-$else:  
-$    bw=100  
-$delay=str(10+(hops*2))+'ms'  
-You can change the value for bw and delay.  
+$if hops < 3: .  
+$    bw=1000 .
+$else: .  
+$    bw=100 .  
+$delay=str(10+(hops*2))+'ms' .  
+**You can change the value for bw and delay if prefer.**  
 
 ####[File Size Details]  
 [1] 126 bytes - Ptt_Path_SJC.txt  

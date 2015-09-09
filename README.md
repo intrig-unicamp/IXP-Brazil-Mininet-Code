@@ -17,14 +17,15 @@ Depending of the code the process can take too long time (more than 1 or 2 hours
 Networkx - https://networkx.github.io/   
 
 ###How Configure the Link among SAs  
+===================================
 The links among ASes are configured as follows:  
 .. code-block:: bash
 
-     $if hops < 3: .  
-     $    bw=1000 .
-     $else: .  
-     $    bw=100 .  
-     $delay=str(10+(hops*2))+'ms'  
+     if hops < 3: .  
+         bw=1000 .
+     else: .  
+         bw=100 .  
+     delay=str(10+(hops*2))+'ms'  
 **You can change the value for bw and delay if prefer.**  
 
 ####[File Size Details]  

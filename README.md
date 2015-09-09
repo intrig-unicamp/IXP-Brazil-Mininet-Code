@@ -14,7 +14,8 @@ To run the code just type `python mininetPTT.py`, but you have to choose the PTT
 Depending of the code the process can take too long time (more than 1 or 2 hours) and require more than 160Gb of RAM memory. Alternatively you can use `mininetCodeGenerator.py` file and choose the number of ASes hops from the PTT that you want to remove. The file should create another one called `mininetCode.py` which you will use to generate the topology over Mininet.  
 
 ###Dependency:   
-Networkx - https://networkx.github.io/   
+Mininet - http://mininet.org  
+Networkx - https://networkx.github.io   
 
 ###How Configure the Link among SAs
 The links among ASes are configured as follows:  

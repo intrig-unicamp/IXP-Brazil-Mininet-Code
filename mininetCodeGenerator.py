@@ -90,20 +90,21 @@ def topology():
     
     for line in nx.generate_edgelist(A, data=False, delimiter=','):
         line = line.split(',')
-        distance = 0
-        higherDistance = 0
+        hops = 0
+        higherHop = 0
         if (line[0][:1]!='h') and (line[1][:1]!='h'):
             if line[0]!=26121:
                 distance = len(nx.shortest_path(A,source=26121,target=int(line[0])))-1
-                higherDistance = distance
+                higherHop = distance
             if line[1]!=26121:
-                if higherDistance < len(nx.shortest_path(A,source=26121,target=int(line[1])))-1:
-                    distance = len(nx.shortest_path(A,source=26121,target=int(line[1])))-1
-        if distance < 3:
+                if higherHop < len(nx.shortest_path(A,source=26121,target=int(line[1])))-1:
+                    hops = len(nx.shortest_path(A,source=26121,target=int(line[1])))-1
+	#Link Configuration
+        if hops < 3:
             bw=1000
         else:
             bw=100
-        delay=str(10+(distance*2))+'ms'
+        delay=str(10+(hops*2))+'ms'
         
         if (line[0][:1]=='h'):
             os.system('echo "    net.addLink(\'%s\',\'ASN%s\')" >> %s' % (line[0], line[1], outputFileName)) 

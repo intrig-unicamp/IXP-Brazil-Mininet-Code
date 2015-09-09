@@ -25,7 +25,7 @@ The links among ASes are configured as follows:
      else:   
          bw=100   
      delay=str(10+(hops*2))+'ms'  
-**You may change the value for bw and delay if prefer.**  
+**You may change the value for bw and delay if prefer (inside of `mininetCodeGenerator.py`).**  
 
 ####[File Size Details]  
 [1] 126 bytes - Ptt_Path_SJC.txt  
